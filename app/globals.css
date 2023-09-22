@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+.clip-path-top-left {
+  background: #0767a8 !important;
+  clip-path: ellipse(100% 97% at 0% 97%);
+  height: 100px;
+  width: 100px;
+
+  position: absolute;
+  top: 0;
+  left: 7%;
+  z-index: -1;
+}
+
+.clip-path-bottom-right {
+  background: #0767a880 !important;
+  clip-path: ellipse(100% 97% at 100% 97%);
+  height: 80px;
+  width: 80px;
+
+  /*positioning of the quarter circle*/
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.clip-path-bottom-left {
+  background: #0767a8 !important;
+  clip-path: ellipse(100% 97% at 100% 97%);
+  height: 80px;
+  width: 80px;
+
+  /*positioning of the quarter circle*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.sliderLabel {
+  /* background-color: var(--color-primary); */
+  background-color: #0767a8;
+  border-radius: 2rem;
+  color: #fff;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  position: relative;
+  /* top: 0.5rem; */
+  width: -webkit-max-content;
+  width: max-content;
+}
+
+/* .my-bg {
+  width: "100%";
+  height: "100%";
+  background: "linear-gradient(180deg, rgba(7, 103, 168, 0.19) 0%, rgba(7, 103, 168, 0) 100%)";
+} */
+
+.navbar {
+  overflow: hidden;
+  /* background-color: #333; */
+  position: fixed;
+  top: 50;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-gradient {
+  width: "100%";
+  height: "100%";
+  background: "linear-gradient(180deg, rgba(7, 103, 168, 0.19) 0%, rgba(7, 103, 168, 0) 100%)";
+}
+
+.app-form {
+  display: none;
+}
+
+.app-form.active {
+  display: block;
+}
+
+input,
+select {
+  outline: none;
+  border: none;
+}
